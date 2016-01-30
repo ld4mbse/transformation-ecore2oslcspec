@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dynsim="http://incose.org/dynsim#">
+	<rdfs:Class rdf:about="dynsim:Model">
+		<rdfs:label xml:lang="en-GB">Model</rdfs:label>
+		<dcterms:description xml:lang="en-GB">A model is a top-level container including blocks and connections to describe a dynamic system model.</dcterms:description>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Model_name">
+		<rdfs:label xml:lang="en-GB">name</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Model_block">
+		<rdfs:label xml:lang="en-GB">block</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Model_connection">
+		<rdfs:label xml:lang="en-GB">connection</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:Subsystem">
+		<rdfs:label xml:lang="en-GB">Subsystem</rdfs:label>
+		<dcterms:description xml:lang="en-GB">A subsystem is used to regroup a set of blocks and connections as a modular unit. A subsytem is identical to a model with the difference that it has ports and can be embedded in other models. Subsystems facilitate reuse and provide a mechanism to give a hierarchical structure to dynamic system models.</dcterms:description>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+		<rdfs:subClassOf rdf:resource="dynsim:Model"/>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Model_name">
+		<rdfs:label xml:lang="en-GB">name</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Model_block">
+		<rdfs:label xml:lang="en-GB">block</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Model_connection">
+		<rdfs:label xml:lang="en-GB">connection</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Subsystem_port">
+		<rdfs:label xml:lang="en-GB">port</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:Block">
+		<rdfs:label xml:lang="en-GB">Block</rdfs:label>
+		<dcterms:description xml:lang="en-GB">A block is the main reusable modular unit for describing a physical system or an operation within a dynamic system model.</dcterms:description>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Block_name">
+		<rdfs:label xml:lang="en-GB">name</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Block_parameter">
+		<rdfs:label xml:lang="en-GB">parameter</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Block_port">
+		<rdfs:label xml:lang="en-GB">port</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:Port">
+		<rdfs:label xml:lang="en-GB">Port</rdfs:label>
+		<dcterms:description xml:lang="en-GB">A port defines an interaction point of a block. A port is used to define the signal inputs and outputs of a block or the across and through variables of a block describing a physical system.</dcterms:description>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Port_ID">
+		<rdfs:label xml:lang="en-GB">ID</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Port_signalVariable">
+		<rdfs:label xml:lang="en-GB">signalVariable</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Port_throughVariable">
+		<rdfs:label xml:lang="en-GB">throughVariable</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Port_acrossVariable">
+		<rdfs:label xml:lang="en-GB">acrossVariable</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:Connection">
+		<rdfs:label xml:lang="en-GB">Connection</rdfs:label>
+		<dcterms:description xml:lang="en-GB">A connection is used to connect two ports. Depending on the nature of the ports (signal flow ports or physical interaction ports), equality and sum-to-zero equations can be derived from the connection.</dcterms:description>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Connection_sourcePort">
+		<rdfs:label xml:lang="en-GB">sourcePort</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdf:Property rdf:about="dynsim:Connection_targetPort">
+		<rdfs:label xml:lang="en-GB">targetPort</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:Parameter">
+		<rdfs:label xml:lang="en-GB">Parameter</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Parameter_name">
+		<rdfs:label xml:lang="en-GB">name</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:Variable">
+		<rdfs:label xml:lang="en-GB">Variable</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Variable_name">
+		<rdfs:label xml:lang="en-GB">name</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:SignalVariable">
+		<rdfs:label xml:lang="en-GB">SignalVariable</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+		<rdfs:subClassOf rdf:resource="dynsim:Variable"/>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Variable_name">
+		<rdfs:label xml:lang="en-GB">name</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:ThroughVariable">
+		<rdfs:label xml:lang="en-GB">ThroughVariable</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+		<rdfs:subClassOf rdf:resource="dynsim:Variable"/>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Variable_name">
+		<rdfs:label xml:lang="en-GB">name</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+	<rdfs:Class rdf:about="dynsim:AcrossVariable">
+		<rdfs:label xml:lang="en-GB">AcrossVariable</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+		<rdfs:subClassOf rdf:resource="dynsim:Variable"/>
+	</rdfs:Class>
+	<rdf:Property rdf:about="dynsim:Variable_name">
+		<rdfs:label xml:lang="en-GB">name</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="http://incose.org/dynsim#"/>
+		<dcterms:issued>2014-01-05</dcterms:issued>
+	</rdf:Property>
+</rdf:RDF>
